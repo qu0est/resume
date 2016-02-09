@@ -118,7 +118,7 @@ var formattedBioPic = HTMLbioPic.replace("%data%",bio.bioPic);
  };
 
 function displayWork() {
-	for (job in work.jobs){
+	for (var job in work.jobs){
 	//create new div for work experience	
 	$("#workExperience").append(HTMLworkStart);
 	//concat employer and title 
@@ -249,7 +249,7 @@ var projects ={
 };
  		
 function displayProjects(){
-	for (project in projects.projects){
+	for (var project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace
@@ -268,15 +268,15 @@ function displayProjects(){
 	}
 }	
 
-function inName(name){
-  var name = bio.name;
-  name = name.trim().split(" ");
-  console.log(name);
-  name[1] = name[1].toUpperCase();
-  name[0] = name[0].slice(0,1).toUpperCase() +
-  name[0].slice(1).toLowerCase();
+function inName(nameChange){
+  var nameChange = bio.name;
+  nameChange = nameChange.trim().split(" ");
+  console.log(nameChange);
+  nameChange[1] = nameChange[1].toUpperCase();
+  nameChange[0] = nameChange[0].slice(0,1).toUpperCase() +
+  nameChange[0].slice(1).toLowerCase();
 
-  return name[0] + " " + name[1];
+  return nameChange[0] + " " + nameChange[1];
 }
 	
  
