@@ -1,0 +1,41 @@
+.title-super{
+	font-weight: bold;
+}
+
+.title-logo{
+	position: static;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.text-muted{
+	color: #BCBBBB;
+}
+.text-thin{
+	font-weight: bold;
+}
+
+.title-super{
+	font-size:60px;
+}
+
+.title-logo{
+	margin-top: 20px
+}
+
+h3{
+	font-weight:bold;
+}
+
+hr{
+	border: solid;
+	color:#BCBBBB;
+}
+
